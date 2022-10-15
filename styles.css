@@ -1,0 +1,70 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 2vw);
+    top: 0;
+    left: 0;
+    padding: 1vw;
+}
+#brand {
+    border-radius: 3vw;
+    height: 2rem;
+    display: flex;
+    padding: 0.5vw;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 200ms, box-shadow 200ms;
+}
+#brand:hover {
+    background-color: #dedaad98;
+    /* box-shadow: 0px 2px 20px 5px rgba(0,0,0,0.16); */
+}
+#hIcon {
+    height: 1.8rem;
+}
+#hTitle {
+    font-family: 'Nunito', sans-serif;
+    color: #6e7a31;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 1vw;
+}
+.sections {
+    justify-content:right;
+    align-items: center;
+    display: flex;
+    width: 60%;
+    height: 2rem;
+    margin-left: 3vw;
+}
+.section {
+    font-size: 1.2rem;
+    margin: 0 2vw;
+}
+#dnMode {
+    background: none;
+    border: none;
+    border-radius: 100%;
+    filter: invert(0%);
+    background-color: rgb(255, 255, 255);
+    padding: 0.4rem;
+    height: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: background-color 200ms, box-shadow 200ms, transform 300ms;
+}
+#dnMode:hover {
+    background-color: #dedaad98;
+    box-shadow: 0px 2px 20px 5px rgba(0,0,0,0.16);
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+#sunIcon {
+    height: 100%;
+}
