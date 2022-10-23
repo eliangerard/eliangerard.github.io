@@ -1,6 +1,12 @@
 * {
     font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    scrollbar-width: none;
 }
+::-webkit-scrollbar {
+    display: none;
+  }
+
 header {
     display: flex;
     position: fixed;
@@ -10,6 +16,7 @@ header {
     top: 0;
     left: 0;
     padding: 1vw;
+    background-color: white;
 }
 #brand {
     border-radius: 3vw;
@@ -28,7 +35,7 @@ header {
     height: 1.8rem;
 }
 #hTitle {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #6e7a31;
     font-size: 1.5rem;
     font-weight: 900;
@@ -44,7 +51,8 @@ header {
 }
 .section {
     font-size: 1.2rem;
-    margin: 0 2vw;
+    margin: 0 1rem;
+    color: #000000a8;
 }
 #dnMode {
     background: none;
@@ -57,14 +65,47 @@ header {
     display: flex;
     align-content: center;
     justify-content: center;
-    transition: background-color 200ms, box-shadow 200ms, transform 300ms;
+    transition: transform 300ms;
 }
 #dnMode:hover {
-    background-color: #dedaad98;
-    box-shadow: 0px 2px 20px 5px rgba(0,0,0,0.16);
     cursor: pointer;
     transform: rotate(360deg);
 }
 #sunIcon {
     height: 100%;
+    filter: opacity(65%);
+}
+#data {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+#name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+}
+#photo {
+    height: 20rem;
+}
+#btnContactHeader {
+    border: none;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #6e7a31;
+    font-size: 1rem;
+    background-color: #dedaad;
+}
+#btnContact {
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #6e7a31;
+    font-size: 1rem;
+    background-color: #dedaad;
 }
