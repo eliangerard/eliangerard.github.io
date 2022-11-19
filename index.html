@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="src/eglogo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,700;0,900;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,700;0,900;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@700&family=Orienta&display=swap" rel="stylesheet">
     <title>Elian Gerard</title>
 </head>
-<body>
+<body id="background" onload="loadInfo()">
     <header>
         <div id="brand">
-            <img id="hIcon" src="src/eglogo.svg">
+            <!-- <img id="hIcon" src="src/eglogo.svg"> -->
             <p id="hTitle">EG</p>
         </div>
-        <h2 class="section">About</h2>
+        <h2 class="section" onclick="document.getElementById('about').scrollIntoView();" >About</h2>
         <h2 class="section">Skills</h2>
         <h2 class="section">Education</h2>
         <h2 class="section">Portfolio</h2>
         <div class="sections">
-            <button id="btnContactHeader">Contact me</button>
-            <button id="dnMode">
+            <!-- <button id="dnMode" onclick="nightMode()">
                 <img id="sunIcon" src="src/sun_16.png">
-            </button>
+            </button> -->
+            <button id="btnContactHeader">Contact me</button>
         </div>
 
     </header>
@@ -33,18 +34,29 @@
         <div>
             <h1 id="name">Elian </br>Gerard</h1>
             <h2>Frontend Developer</h2>
-            <button id="btnContact">Contact me</button>
+            <!-- <button id="btnContact">Contact me</button> -->
         </div>
-            <img id="photo" src="src/pic.jpg">
+            <img id="photo" src="src/pic2.png">
     </section>
-    <section>
-        <h2>About</h2>
-        <p>Hello! I'm Elian and this is my personal website, I'm a mexican frontend developer currently learning ReactJS and Node.js</p>
+    <section id="about">
+        <div id="info">
+            <h2>About</h2>
+            <p>Hello! I'm Elian and this is my personal website, I'm a mexican frontend developer currently learning ReactJS and Node.js</p>
+        </div>
+        <div id="small">
+            <h2>Me</h2>
+            <h3>Age</h3>
+            <div id="age">
+                <p id="years">20 years</p>
+                <p id="months">4 months</p>
+                <p id="days">25 days</p>
+                <p id="hours">0 hours</p>
+                <p id="minutes">49 minutes</p>
+                <p id="seconds">10 seconds</p>
+            </div>
+        </div>
     </section>
-    <script language="JavaScript" type="text/javascript">
-        document.querySelector('#dnMode').addEventListener('click', () => {
-            document.querySelector('*').classList.add('');
-        }); 
+    <script src="helpers/index.js">
     </script>
 </body>
 </html>
