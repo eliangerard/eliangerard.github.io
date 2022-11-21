@@ -76,7 +76,7 @@ header {
 .section {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 1rem;
     color: var(--shadow-blue);
     border-bottom: 0px solid var(---bdazzled-blue);
@@ -153,6 +153,7 @@ header {
     opacity: 100%;
 }
 #thatsMe {
+    text-align: right;
     font-weight: bold;
     color: var(---bdazzled-blue);
     opacity: 0%;
@@ -316,11 +317,14 @@ ul {
     transition: outline 200ms;
 }
 #portfolio article:hover {
-    outline: 8px solid var(--shadow-blue);
+    outline: 6px solid var(--shadow-blue);
 }
 #portfolio h3 {
     font-size: 2rem;
     color: var(--shadow-blue);
+}
+#porfolio #rs {
+    margin: 0rem;
 }
 .buttons {
     display: flex;
@@ -375,7 +379,7 @@ input {
 }
 
 input:focus {
-    outline: 3px solid var(--shadow-blue);
+    outline: 3px solid var(--background);
 }
 #sendForm {
     display: flex;
