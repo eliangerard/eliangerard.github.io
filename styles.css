@@ -3,7 +3,9 @@
     margin: 0;
     scrollbar-width: none;
 }
-
+html {
+    width: 100%;
+}
 :root {
     ---bdazzled-blue: #12694c;
     --silver: #C8C8C8ff;
@@ -281,7 +283,7 @@ ul {
 }
 #education ul {
     font-size: 2rem;
-    width: 100%;
+    width: 90%;
 }
 #education  li {
     border-bottom: 0px solid var(---bdazzled-blue);
@@ -388,4 +390,81 @@ input:focus {
 
 button:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    #name {
+        font-size: 10vh;
+    }
+
+    #email {
+        width: 80%;
+    }
+    #sections {
+        display: none;
+    }
+    #info {
+        width: 90%;
+    }
+    #data {
+        flex-direction: column;
+        align-content: space-between;
+        height: fit-content;
+    }
+    #myInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    #skills ul {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #education ul{
+        width: calc(90% - 40px);
+        font-size: 1rem;
+    }
+    #education p {
+        font-size: small;
+    }
+    #education {
+        padding: 0;
+    }
+    .parTitle {
+        font-size: 2rem;
+    }
+    .imparTitle {
+        font-size: 2rem;
+    }
+    article {
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 450px) {
+        #photo {
+            width: 70vw;
+            height: 70vw;
+        }
+        #skills ul {
+            font-size: 1rem;
+        }
+        #info {
+            width: cacl(100% - 2rem);
+        }
+        #age p{
+            width: 45%;
+            margin-bottom: 0.5rem;
+            font-size: smaller;
+        }
+        #btnContactHeader {
+            font-size: smaller;
+            padding: 0.2rem 0.2rem;
+        }
+        #age {
+            height: fit-content;
+        }
+        #about {
+            padding: 0.2rem;
+        }
+    }
 }
