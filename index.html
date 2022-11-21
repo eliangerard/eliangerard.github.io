@@ -5,47 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="src/eglogo.svg">
+    <link rel="shortcut icon" href="src/egicono3.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,700;0,900;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mada:wght@700&family=Orienta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <title>Elian Gerard</title>
 </head>
 <body id="background" onload="loadInfo()">
     <header>
         <div id="brand">
-            <!-- <img id="hIcon" src="src/eglogo.svg"> -->
-            <p id="hTitle">EG</p>
+            <img id="hIcon" src="src/egicono.svg">
         </div>
-        <h2 class="section" onclick="document.getElementById('about').scrollIntoView();" >About</h2>
-        <h2 class="section">Skills</h2>
-        <h2 class="section">Education</h2>
-        <h2 class="section">Portfolio</h2>
-        <div class="sections">
-            <!-- <button id="dnMode" onclick="nightMode()">
-                <img id="sunIcon" src="src/sun_16.png">
-            </button> -->
-            <button id="btnContactHeader">Contact me</button>
+        <div id="sections">
+            <h2 class="section" onclick="document.getElementById('about').scrollIntoView();" >About</h2>
+            <h2 class="section" onclick="document.getElementById('skills').scrollIntoView();" >Skills</h2>
+            <h2 class="section" onclick="document.getElementById('education').scrollIntoView();" >Education</h2>
+            <h2 class="section" onclick="document.getElementById('portfolio').scrollIntoView();" >Portfolio</h2>
         </div>
+        <button id="btnContactHeader" onclick="document.getElementById('contact').scrollIntoView();">Contact me</button>
+        
 
     </header>
     <section id="data">
         <div>
             <h1 id="name">Elian </br>Gerard</h1>
             <h2>Frontend Developer</h2>
+            <div id="rss">
+                <div id="rs" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/git.png">
+                </div>
+                <div id="rs" onclick="window.open('https://www.linkedin.com/in/eliangerard/', '_blank')">
+                    <img src="src/linkedin.png">
+                </div>
+            </div>
+
             <!-- <button id="btnContact">Contact me</button> -->
         </div>
+        <div id="dataRight">
             <img id="photo" src="src/pic2.png">
+            <p id="thatsMe">That's me! ⇧</p>
+        </div>
     </section>
     <section id="about">
         <div id="info">
-            <h2>About</h2>
-            <p>Hello! I'm Elian and this is my personal website, I'm a mexican frontend developer currently learning ReactJS and Node.js</p>
-        </div>
-        <div id="small">
-            <h2>Me</h2>
-            <h3>Age</h3>
+            <h2 class="imparTitle">About</h2><br>
+            <p>Hello! I'm Elian and this is my web portfolio, I am a Mexican computer systems engineering student and frontend developer, currently learning ReactJS and Node.js.</p>
+            <br>
+            <h3>Time existing</h3>
             <div id="age">
                 <p id="years">20 years</p>
                 <p id="months">4 months</p>
@@ -55,8 +63,205 @@
                 <p id="seconds">10 seconds</p>
             </div>
         </div>
+        <!-- <div id="small">
+            <h2>Me</h2>
+            <h3>Age</h3>
+            <div id="age">
+                
+            </div>
+        </div> -->
     </section>
+    <section id="skills">
+        <h2 class="parTitle">Skills</h2>
+        <p>I'm currently learning these technologies while attending university:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <p>And with these:</p>
+            <li>ReactJS</li>
+        </ul>
+        <i>But I learn fast!</i>
+    </section>
+    <section id="education">
+        <h2 class="imparTitle">Education</h2>
+        <div>
+            <ul>
+                <li onclick="window.open('src/itchii-fullstack.jpg', '_blank')">Computer Systems Engineering specialized on Fullstack</li>
+                <p>Ingeniería en Sistemas Computacionales especialized as Fullstack - Instituto Tecnológico de Chihuahua II</p>
+                <li onclick="window.open('https://www.udemy.com/course-dashboard-redirect/?course_id=3096364', '_blank')">React: From cero to expert (Hooks & MERN)</li>
+                <p>React: De cero a experto (Hooks y MERN) - Fernando Herrera</p>
+                <li onclick="window.open('https://www.udemy.com/course-dashboard-redirect/?course_id=1562070', '_blank')">Node: From cero to expert</li>
+                <p>Node: De cero a experto - Fernando Herrera</p>
+
+            </ul>
+        </div>
+        <i>What a trip!</i>
+    </section>
+    <section id="portfolio">
+        <h2 class="parTitle">Portfolio</h2>
+        <h3>Just HTML, CSS, JavaScript</h3>
+        <article>
+            <div>
+                <h4>Demo Rent App</h4>
+                <p>This is a prototype for an event venue rental web application made during the fifth semester of my degree.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h4>Movie DataBase</h4>
+                <p>This is a prototype for a multimedia content search web application with the MDB API, made to practice for a Hackathon in my fifth semester.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h4>Weather App</h4>
+                <p>This is a prototype for a weather web application with the OpenWeather API, also to practice for a Hackathon in my fifth semester.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h4>Deezer Copy</h4>
+                <p>This is a copy of the deezer web client that works with its public API, made as a practice.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <h3>ReactJS</h3>
+        <article>
+            <div>
+                <h4>React Chat App</h4>
+                <p>A real-time chat application made with firebase and React in a workshop at my school.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h4>Gif Search App</h4>
+                <p>An application to search for gifs, made in Fernando Herrera's React course.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <h3>Node.js</h3>
+        <article>
+            <div>
+                <h4>Multipurpose Discord Bot</h4>
+                <p>A discord server bot that can play music and consume other useful APIs.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h4>Google Assistant Discord Bot</h4>
+                <p>A bot for discord servers with which you can use the google assistant, by voice or commands.</p>
+                <i>I've a video!</i>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h4>TTS Discord Bot</h4>
+                <p>A bot for discord servers with which you can use TTS directly to a voice channel.</p>
+            </div>
+            <div class="buttons">
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/code.png">
+                </div>
+                <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/tothere.png">
+                </div>
+            </div>
+        </article>
+        <h3>Other stuff</h3>
+        <p>In my free time I also develop videogames, so far I have only finished this one, Minemadness, made with Unity and C#, 100% made by me.</p>
+        <div class="buttons">
+            <div class="portfolioBtn" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                <img src="src/tothere.png">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <form id="contact" action="https://send.pageclip.co/sflya8uObfaGttt6KTo7cTXLuj4bfkZ4/contact-form" class="pageclip-form" method="post">
+            <h3>Contact me</h3>
+            <label>Your email (so I can write you back)</label><br>
+            <input id="email" name="email" type="email"><br>
+            <label>Tell me :)</label><br>
+            <input id="text" name="subject" type="text">
+            <button id="sendForm" type="submit" class="pageclip-form__submit">
+                <span>Send</span>
+              </button>
+        </form>
+        <div>
+            <div id="rss">
+                <div id="rs" onclick="window.open('https://github.com/eliangerard/', '_blank')">
+                    <img src="src/git.png">
+                </div>
+                <div id="rs" onclick="window.open('https://www.linkedin.com/in/eliangerard/', '_blank')">
+                    <img src="src/linkedin.png">
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="helpers/index.js">
     </script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>
