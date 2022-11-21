@@ -74,6 +74,7 @@ header {
     margin-left: 3vw;
 }
 .section {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0 1rem;
@@ -266,7 +267,7 @@ ul {
 }
 #skills li {
     margin: 1rem;
-    width: 30%;
+    width: fit-content;
     transition: border-bottom 200ms;
     border-bottom: 0px solid var(---bdazzled-blue);
     color: var(---bdazzled-blue);
@@ -299,7 +300,9 @@ ul {
     margin-bottom: 1rem;
     color: var(--shadow-blue);
 }
-
+#education h2 {
+    margin-bottom: 1rem;
+}
 #portfolio article {
     display: flex;
     justify-content: space-between;
@@ -331,7 +334,7 @@ ul {
     height: 3rem;
     width: 3rem;
     border-radius: 100%;
-    margin-left: 1rem;
+    margin: 0 0.5rem;
 }
 .portfolioBtn:hover {
     cursor: pointer;
@@ -393,6 +396,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 767px) {
+    header {
+        padding: 1rem;
+        width: calc(100% - 2rem);
+    }
     #name {
         font-size: 10vh;
     }
@@ -436,6 +443,9 @@ button:hover {
     }
     article {
         flex-direction: column;
+    }
+    .buttons {
+        justify-content: center;
     }
     #portfolio h3 {
         font-size: 1rem;
