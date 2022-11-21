@@ -44,11 +44,6 @@ header {
     padding: 0.5vw;
     align-items: center;
     justify-content: space-between;
-    transition: background-color 200ms, box-shadow 200ms;
-}
-#brand:hover {
-    background-color: #dedaad98;
-    /* box-shadow: 0px 2px 20px 5px rgba(0,0,0,0.16); */
 }
 #hIcon {
     height: 1.6rem;
